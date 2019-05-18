@@ -1,0 +1,7 @@
+#!/bin/sh
+
+/opt/postlang/bin/postc "$1" tmp
+
+cat - | ./tmp
+
+rm tmp
